@@ -6,13 +6,11 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% if post.id %}
+<!--{% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
-{% endif %}
-
-{% assign authors = post.authors %}
+{% endif %}-->
 
 <div class="{{ include.type | default: "list" }}__item">
   <li>
@@ -37,8 +35,11 @@
         {% endif %}
         {{title}}
       </h3>-->
-
-      {{ authors }}  <b>{{ title }}</b><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%m-%Y" }}. <a href="{{ post.link }}">PDF</a>
+      {% if post.collection == 'publications' %}
+        {{ post.authors }}  <i>{{ post.title }}. </i><b>{{ post.venue }}</b>, {{ post.date | default: "1900-01-01" | date: "%m-%Y" }}. <a href="{{ post.link }}">PDF</a>
+      {% elsif post.collection == 'teaching' %}
+        <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="https://lallodi.github.io/teaching/">Course page</a>
+      {% endif %}
 
       <!--
       {% if post.read_time %}
