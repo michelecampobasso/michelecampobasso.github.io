@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Michele Campobasso"
+title                    : "Home page"
 title_separator          : "-"
 name                     : &name "Michele Campobasso"
 description              : &description "Academical page"
