@@ -47,8 +47,8 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 5.2em;
-    padding-left: 2em;
     font-weight: 700;
+    overflow: auto;
+    position: relative;
   }
 }
