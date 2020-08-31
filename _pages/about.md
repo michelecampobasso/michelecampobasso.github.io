@@ -14,7 +14,7 @@ I am a PhD candidate at the [Security Group](https://security1.win.tue.nl) of [E
 
 My research interests aim at characterizing emerging threats relying from underground blackmarkets to build their offense. 
 
-To this extent, my efforts address the discovery of emerging undeground criminal business models and how they're framed into the criminal supply-chain, their provisioning capability for an arbitrary threat actor, [the circumvention of adversarial countermeasures to investigation and infiltration in blackmarkets](https://ieeexplore.ieee.org/abstract/document/8802484), and the attribution of illegal products and services available across the markets. 
+To this extent, my efforts address the [discovery of emerging undeground criminal business models](https://michelecampobasso.github.io/publication/2020-11-10-impaas) and how they're framed into the criminal supply-chain, their provisioning capability for an arbitrary threat actor, [the circumvention of adversarial countermeasures to investigation and infiltration in blackmarkets](https://michelecampobasso.github.io/publication/2019-07-17-caronte), and the attribution of illegal products and services available across the markets. 
 
 Personal
 ------

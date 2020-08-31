@@ -36,9 +36,9 @@
         {{title}}
       </h3>-->
       {% if post.collection == 'publications' %}
-        {{ post.authors }}  <i>{{ post.title }}. </i><b>{{ post.venue }}</b>, {{ post.date | default: "1900-01-01" | date: "%m-%Y" }}. <a href="{{ post.link }}">PDF</a>
+        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i><b>{{ post.venue }}</b>{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
       {% elsif post.collection == 'teaching' %}
-        <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="https://lallodi.github.io/teaching/">Course page</a>
+        <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="{{ post.course_page}}">Course page</a>
       {% endif %}
 
       <!--
