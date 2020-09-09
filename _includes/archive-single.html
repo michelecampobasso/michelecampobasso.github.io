@@ -13,8 +13,7 @@
 {% endif %}-->
 
 <div class="{{ include.type | default: "list" }}__item">
-  <li>
-    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       {% if include.type == "grid" and teaser %}
         <div class="archive__item-teaser">
           <img src=
@@ -68,6 +67,5 @@
         <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
       {% endif %}
       -->
-    </article>
   </li>
 </div>
