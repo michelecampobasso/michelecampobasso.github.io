@@ -56,9 +56,11 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        {% if page.pre_print_link %}<div><a href="{{ page.pre_print_link }}" class="btn btn--danger">Pre-print Direct Link</a></div>{% endif %}
+        {{ content }}<div>
+        {% if page.link %}<a href="{{ page.link }}" class="btn btn--success">{{ site.data.ui-text[site.locale].ext_link_label | default: "Publisher Direct Link" }}</a>{% endif %}
+        {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--danger">Pre-print Direct Link</a>{% endif %}
+        {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn">Open-access Direct Link</a>{% endif %}
+        </div>
       </section>
 
       <footer class="page__meta">
