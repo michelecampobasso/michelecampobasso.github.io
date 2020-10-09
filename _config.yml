@@ -311,6 +311,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-# Enabling Analytics & Co.
-JEKYLL_ENV=production
