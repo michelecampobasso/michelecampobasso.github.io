@@ -8,10 +8,10 @@
 # Site Settings
 environment              : production
 locale                   : "en-US"
-title                    : "Home page"
+title                    : "Michele Campobasso"
 title_separator          : "-"
 name                     : &name "Michele Campobasso"
-description              : &description "Academical page"
+description              : "Academical page of Michele Campobasso. Technical University of Eindhoven. Cybercrime operations, cybercrime ecosystems, emerging threat, threat modelling"
 url                      : https://michelecampobasso.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #url                      : http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
