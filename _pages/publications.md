@@ -8,7 +8,7 @@ author_profile: true
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-You can also find my articles on <a href="{{author.googlescholar}}">my Google Scholar profile</a>.
+<p>You can also find my articles on <a href="{{author.googlescholar}}">my Google Scholar profile</a>.</p>
 
 {% include base_path %}
 

@@ -25,7 +25,7 @@ savespace {
   font-size: $type-size-10;
   font-weight: bold;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   background-color: #FFF;
   border: 1px solid !important;
   border-radius: $border-radius;
@@ -98,9 +98,9 @@ savespace {
     }
   }
 
-  /* success */
+  /* positive */
 
-  &--success {
+  &--positive {
     background-color: $success-color;
 
     &:hover {
@@ -108,13 +108,16 @@ savespace {
     }
   }
 
-  /* positive */
+  /* success */
 
-  &--positive {
-    background-color: $info-color;
+  &--success {
+    color: $success-color !important;
+    background-color: mix(#FFF, $success-color, 90%) !important;
+    border-color: $success-color !important;
 
     &:hover {
-      background-color: mix(#000, $info-color, 20%);
+      color: mix(#60DF80, $success-color, 70%) !important;
+      background-color: mix(#FFF, $success-color, 70%) !important;
     }
   }
 
@@ -124,15 +127,6 @@ savespace {
     color: $danger-color !important;
     background-color: mix(#FFF, $danger-color, 90%) !important;
     border-color: $danger-color !important;
-
-    &.right {
-      float: right !important;
-    }
-
-    &.savespace {
-      margin-top: -20px;
-      margin-bottom: -20px;
-    }
 
     &:hover {
       color: mix(#FF0000, $danger-color, 70%) !important;

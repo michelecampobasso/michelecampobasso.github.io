@@ -18,7 +18,7 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -94,6 +94,7 @@
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
     padding-left: $left-sidebar-width-wide;
+    margin-bottom: 8px;
   }
 
   @include breakpoint($large) {

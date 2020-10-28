@@ -39,14 +39,18 @@ layout: default
         {% elsif page.venue and page.date %} <!-- Publication -->
           <p><i><b>{{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y-%m" }}</b></i><br><i style="font-size: 0.85em">{{page.authors}}</i></p>
           <section class="page__content" itemprop="text">
+            {{ content }}
             <p style="float: right !important; margin-bottom: -40px; margin-top: -20px">
+
         <!--{% if page.link %}<a href="{{ page.link }}" class="btn btn"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Publisher Direct Link</a>{% endif %}
         {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Pre-print Direct Link</a>{% endif %}
         {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--success"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Open-access Direct Link</a>{% endif %}-->
+        {% if page.source %}<a href="{{ page.source }}" class="btn btn--success"><i class="fa fa-code fa-lg" aria-hidden="true"></i> Source code</a>{% endif %}
+        {% if page.database %}<a href="{{ page.database }}" class="btn btn--success"><i class="fa fa-database fa-lg" aria-hidden="true"></i> Datasets</a>{% endif %}
         {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Pre-print Direct Link</a>{% endif %}
         {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Open-access Direct Link</a>{% endif %}
-        {% if page.press %}<a href="#media" class="btn btn--info"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Media coverage</a>{% endif %}</p>
-        </section>
+        {% if page.press %}<a href="#media" class="btn btn--info"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Media coverage</a>{% endif %}</p>
+
 
           {% if page.abstract and page.abstract != "" %}<h2>Abstract</h2>
           <p style="font-size: 0.85em">{{page.abstract}}</p>
@@ -59,12 +63,13 @@ layout: default
           {% endif %}
           {% if page.press and page.press != "" %}<h2 id="media">Media coverage</h2>
             {% for item in page.press%}
-              <a style="font-size: 0.85em" href="{{ item[0] }}">{{ item[1] }}</a><br/>
+              <a style="font-size: 0.85em; " href="{{ item[0] }}">{{ item[1] }}</a><br/>
             {% endfor %}
           {% endif %}
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+        </section>
         
              
         {% if page.citation and page.paperurl %}
@@ -75,6 +80,10 @@ layout: default
      
         </header>
       {% endunless %}
+
+      <section class="page__content" itemprop="text">
+            {{ content }}
+        </section>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
