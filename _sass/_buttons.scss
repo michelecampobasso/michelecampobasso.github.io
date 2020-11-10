@@ -137,6 +137,20 @@ savespace {
     }
   }
 
+  /* appendix */
+
+  &--appendix {
+    color: $appendix-color !important;
+    background-color: mix(#FFF, $appendix-color, 90%) !important;
+    border-color: $appendix-color !important;
+
+    &:hover {
+      color: mix(#882288, $appendix-color, 70%) !important;
+      background-color: mix(#FFF, $appendix-color, 70%) !important;
+
+    }
+  }
+
   /* disabled */
 
   &--disabled {

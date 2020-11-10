@@ -49,6 +49,7 @@ layout: default
         {% if page.database %}<a href="{{ page.database }}" class="btn btn--success"><i class="fa fa-database fa-lg" aria-hidden="true"></i> Datasets</a>{% endif %}
         {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Pre-print Direct Link</a>{% endif %}
         {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Open-access Direct Link</a>{% endif %}
+        {% if page.extra_section_title %}<a href="#appendix" class="btn btn--appendix"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Appendix</a>{% endif %}
         {% if page.press %}<a href="#media" class="btn btn--info"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Media coverage</a>{% endif %}</p>
 
 
@@ -57,9 +58,21 @@ layout: default
           {% endif %}
           {% if page.main_outcomes and page.main_outcomes != "" %}<h2>Main research outcomes</h2>
           <p style="font-size: 0.85em">{{page.main_outcomes}}</p>
-          {% if page.image and page.image != "" %}
-          <img src="{{site.url}}{{page.image}}" onclick="window.open(this.src)"></img>
           {% endif %}
+          {% if page.extra_section_title and page.extra_section_title != "" and page.extra_section_content1 and page.extra_section_content1 != "" %}<h2 id="appendix">{{ page.extra_section_title}}</h2>
+          <p style="font-size: 0.85em">{{page.extra_section_content1}}</p>
+          {% endif %}
+          {% if page.extra_section_fig1 and page.extra_section_fig1 != "" %}
+          <img src="{{site.url}}{{page.extra_section_fig1}}" onclick="window.open(this.src)"></img>
+          {% endif %}
+          {% if page.extra_section_content2 and page.extra_section_content2 != "" %}
+          <br/><br/><p style="font-size: 0.85em">{{page.extra_section_content2}}</p>
+          {% endif %}
+          {% if page.extra_section_fig2 and page.extra_section_fig2 != "" %}
+          <img src="{{site.url}}{{page.extra_section_fig2}}" onclick="window.open(this.src)"></img>
+          {% endif %}
+          {% if page.extra_section_content3 and page.extra_section_content3 != "" %}
+          <br/><br/><p style="font-size: 0.85em">{{page.extra_section_content3}}</p>
           {% endif %}
           {% if page.press and page.press != "" %}<h2 id="media">Media coverage</h2>
             {% for item in page.press%}
