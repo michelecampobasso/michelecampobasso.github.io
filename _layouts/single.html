@@ -37,7 +37,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %} <!-- Publication -->
-          <p><i><b>{{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y-%m" }}</b></i><br><i style="font-size: 0.85em">{{page.authors}}</i></p>
+          <p><i><b>{{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y-%m" }}</b></i><br>{% if page.awards %}<b style="font-size: 0.85em"><i class="fa fa-lg fa-trophy" aria-hidden="true"></i> <u>{{ page.awards}}</u></b><br>{% endif %}<i style="font-size: 0.85em">{{page.authors}}</i></p>
           <section class="page__content" itemprop="text">
             {{ content }}
             <p style="float: right !important; margin-bottom: -40px; margin-top: -20px">
