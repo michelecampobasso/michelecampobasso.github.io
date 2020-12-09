@@ -3,7 +3,7 @@ title: "SAIBERSOC: Synthetic Attack Injection to Benchmark and Evaluate the Perf
 collection: publications
 permalink: /publication/2020-12-07-saibersoc
 date: 2020-12-07
-extra_info: "<b>(Acceptance rate: 23%)</b>"
+extra_info: "<b>(Acceptance rate: 23% - Distinguished Paper Award with Artifacts ACSAC 2020)</b>"
 venue: 'In Proceedings of the 36th Annual Computer Security Applications Conference (ACSAC 2020)'
 pre_print_link: "https://arxiv.org/abs/2010.08453"
 authors: 'Rosso, M., Campobasso, M., Gankhuyag, G., Allodi, L.'
