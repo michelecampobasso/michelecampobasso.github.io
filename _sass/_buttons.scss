@@ -118,22 +118,34 @@ savespace {
     border-color: $success-color !important;
 
     &:hover {
-      color: mix(#60DF80, $success-color, 70%) !important;
+      color: mix(#208F20, $success-color, 70%) !important;
       background-color: mix(#FFF, $success-color, 70%) !important;
     }
   }
 
-  /* danger */
+  /* pdf */
 
-  &--danger {
-    color: $danger-color !important;
-    background-color: mix(#FFF, $danger-color, 90%) !important;
-    border-color: $danger-color !important;
+  &--pdf {
+    color: $pdf-color !important;
+    background-color: mix(#FFF, $pdf-color, 90%) !important;
+    border-color: $pdf-color !important;
 
     &:hover {
-      color: mix(#FF0000, $danger-color, 70%) !important;
-      background-color: mix(#FFF, $danger-color, 70%) !important;
+      color: mix(#FF0000, $pdf-color, 70%) !important;
+      background-color: mix(#FFF, $pdf-color, 70%) !important;
+    }
+  }
 
+  /* pdf-light */
+
+  &--pdf-light {
+    color: $pdf-color !important;
+    background-color: mix(#FFF, $pdf-color, 95%) !important;
+    border-color: mix(#FFF, $pdf-color, 30%) !important;
+
+    &:hover {
+      color: mix(#FF0000, $pdf-color, 85%) !important;
+      background-color: mix(#FFF, $pdf-color, 85%) !important;
     }
   }
 
