@@ -39,17 +39,16 @@ layout: default
         {% elsif page.venue and page.date %} <!-- Publication -->
           <p><i><b>{{ page.venue }}, {{ page.date | default: "1900-01-01" | date: "%Y-%m" }}</b></i><br>{% if page.awards %}<b style="font-size: 0.85em"><i class="fa fa-lg fa-trophy" aria-hidden="true"></i> <u>{{ page.awards}}</u></b><br>{% endif %}<i style="font-size: 0.85em">{{page.authors}}</i></p>
           <section class="page__content" itemprop="text">
-            {{ content }}
-            <p style="float: right !important; margin-bottom: -40px; margin-top: -20px">
+            <p style="float: right !important">
 
-        {% if page.source %}<a href="{{ page.source }}" class="btn btn--success"><i class="fa fa-code fa-lg" aria-hidden="true"></i> Source code</a>{% endif %}
-        {% if page.database %}<a href="{{ page.database }}" class="btn btn--success"><i class="fa fa-database fa-lg" aria-hidden="true"></i> Datasets</a>{% endif %}
-        {% if page.publisher_link %}<a href="{{ page.publisher_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Publisher link</a>{% endif %}
-        {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Pre-print direct link</a>{% endif %}
-        {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--pdf-light"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> arXiv.org</a>{% endif %}
-        {% if page.extra_section_title %}<a href="#appendix" class="btn btn--appendix"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Appendix</a>{% endif %}
-        {% if page.press %}<a href="#media" class="btn btn--info"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Media coverage</a>{% endif %}</p>
-
+        {% if page.publisher_link %}<a href="{{ page.publisher_link }}" class="btn btn--pdf right" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Publisher link</a>{% endif %}
+        {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf right"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Pre-print direct link</a>{% endif %}
+        {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--pdf-light right"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> arXiv.org</a>{% endif %}
+        {% if page.database %}<a href="{{ page.database }}" class="btn btn--success right"><i class="fa fa-database fa-lg" aria-hidden="true"></i> Datasets</a>{% endif %}
+        {% if page.source %}<a href="{{ page.source }}" class="btn btn--success right"><i class="fa fa-code fa-lg" aria-hidden="true"></i> Source code</a>{% endif %}
+        {% if page.extra_section_title %}<a href="#appendix" class="btn btn--appendix right"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Appendix</a>{% endif %}
+        {% if page.video_link %}<a href="{{ page.video_link }}" class="btn btn--video right"><i class="fa fa-film" aria-hidden="true"></i> Presentation video</a>{% endif %}
+        {% if page.press %}<a href="#media" class="btn btn--info right"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Media coverage</a>{% endif %}</p>
 
           {% if page.abstract and page.abstract != "" %}<h2>Abstract</h2>
           <p style="font-size: 0.85em">{{page.abstract}}</p>

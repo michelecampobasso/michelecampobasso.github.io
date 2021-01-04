@@ -6,15 +6,16 @@
    Default button
    ========================================================================== */
 
-right {
-  float: right !important;
-}
 
 savespace {
   margin-top: -20px;
   margin-bottom: -20px;
 }
 
+.right {
+    float: right;
+    margin: 2px;
+  }
 
 
 .btn {
@@ -120,6 +121,19 @@ savespace {
     &:hover {
       color: mix(#208F20, $success-color, 70%) !important;
       background-color: mix(#FFF, $success-color, 70%) !important;
+    }
+  }
+
+  /* video */
+
+  &--video {
+    color: $video-color !important;
+    background-color: mix(#FFF, $video-color, 90%) !important;
+    border-color: $video-color !important;
+
+    &:hover {
+      color: mix(#000, $video-color, 80%) !important;
+      background-color: mix(#FFF, $video-color, 80%) !important;
     }
   }
 
