@@ -177,6 +177,38 @@ savespace {
     }
   }
 
+  &--badge {
+    #color: $badge-color !important;
+    color: #494e52 !important;
+    background-color: mix(#FFF, $badge-color, 60%) !important;
+    border-color: $badge-color !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
+
+    &:hover {
+      color: #494e52 !important;
+      background-color: mix(#FFF, $badge-color-hover, 60%) !important;
+
+    }
+  }
+
+  &--award {
+    #color: $award-color !important;
+    color: #494e52 !important;
+    background-color: $award-color;
+    border-color: mix(#000, $award-color, 20%)  !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
+
+    &:hover {
+      color: #494e52 !important;
+      background-color: $award-color-hover !important;
+
+    }
+  }
+
+  
+
   /* disabled */
 
   &--disabled {

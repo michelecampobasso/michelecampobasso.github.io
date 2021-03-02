@@ -13,7 +13,7 @@
 {% endif %}-->
 
 <div class="{{ include.type | default: "list" }}__item">
-    <li class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       {% if include.type == "grid" and teaser %}
         <div class="archive__item-teaser">
           <img src=
@@ -35,9 +35,14 @@
         {{title}}
       </h3>-->
       {% if post.collection == 'publications' %}
-        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i><b>{{ post.venue }}</b>{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
+      <div style="max-width: 100%">
+        {% if post.acceptance_rate and post.acceptance_rate != "" %}<a class="btn btn--badge" target="_blank" rel="noopener noreferrer">Acceptance rate: {{ post.acceptance_rate }}</a> {% endif %}
+        {% if post.award and post.award != "" and post.award_link and post.award_link != "" %}<a href="{{ post.award_link }}" class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>
+        {% elsif post.award and post.award != "" %}<a class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>{% endif %}
+      </div>
+      <div> {{ post.authors }} <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} </div>{% endif %}
       {% elsif post.collection == 'whitepapers' %}
-        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i><b>{{ post.venue }}</b>{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
+        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
       {% elsif post.collection == 'teaching' %}
         <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="{{ post.course_page}}">Course page</a>
       {% endif %}
@@ -69,5 +74,5 @@
         <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
       {% endif %}
       -->
-  </li>
+  </article>
 </div>
