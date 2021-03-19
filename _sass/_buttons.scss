@@ -17,6 +17,17 @@ savespace {
     margin: 2px;
   }
 
+.morebutton {
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  display: block;
+  text-weight: bold;
+  text-align: center;
+  color: #494e52;
+  text-decoration: none !important;
+  cursor: pointer
+}
 
 .btn {
   /* default button */
@@ -84,6 +95,8 @@ savespace {
     background-color: mix(#FFF, $info-color, 90%) !important;
     border-color: $info-color !important;
     border-width: 2px !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
     &:hover {
       color: mix(#0000FF, $info-color, 70%) !important;
       background-color: mix(#FFF, $info-color, 70%) !important;
@@ -105,6 +118,8 @@ savespace {
 
   &--positive {
     background-color: $success-color;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       background-color: mix(#000, $success-color, 20%);
@@ -117,6 +132,8 @@ savespace {
     color: $success-color !important;
     background-color: mix(#FFF, $success-color, 90%) !important;
     border-color: $success-color !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       color: mix(#208F20, $success-color, 70%) !important;
@@ -130,6 +147,8 @@ savespace {
     color: $video-color !important;
     background-color: mix(#FFF, $video-color, 90%) !important;
     border-color: $video-color !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       color: mix(#000, $video-color, 80%) !important;
@@ -143,6 +162,8 @@ savespace {
     color: $pdf-color !important;
     background-color: mix(#FFF, $pdf-color, 90%) !important;
     border-color: $pdf-color !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       color: mix(#FF0000, $pdf-color, 70%) !important;
@@ -156,6 +177,8 @@ savespace {
     color: $pdf-color !important;
     background-color: mix(#FFF, $pdf-color, 95%) !important;
     border-color: mix(#FFF, $pdf-color, 30%) !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       color: mix(#FF0000, $pdf-color, 85%) !important;
@@ -169,6 +192,8 @@ savespace {
     color: $appendix-color !important;
     background-color: mix(#FFF, $appendix-color, 90%) !important;
     border-color: $appendix-color !important;
+    padding: 0em 0.3em !important;
+    font-size: $type-size-7;
 
     &:hover {
       color: mix(#882288, $appendix-color, 70%) !important;
@@ -178,31 +203,27 @@ savespace {
   }
 
   &--badge {
-    #color: $badge-color !important;
-    color: #494e52 !important;
+    color: $text-color !important;
     background-color: mix(#FFF, $badge-color, 60%) !important;
     border-color: $badge-color !important;
     padding: 0em 0.3em !important;
     font-size: $type-size-7;
 
     &:hover {
-      color: #494e52 !important;
       background-color: mix(#FFF, $badge-color-hover, 60%) !important;
 
     }
   }
 
   &--award {
-    #color: $award-color !important;
-    color: #494e52 !important;
+    color: $text-color !important;
     background-color: $award-color;
     border-color: mix(#000, $award-color, 20%)  !important;
     padding: 0em 0.3em !important;
     font-size: $type-size-7;
 
     &:hover {
-      color: #494e52 !important;
-      background-color: $award-color-hover !important;
+      background-color: mix(#FFF, $award-color-hover, 20%) !important;
 
     }
   }

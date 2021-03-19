@@ -49,6 +49,7 @@ $type-size-10               : 0.8125em; // ~13px
    Colors
    ========================================================================== */
 
+$text-color                 : #494e52;
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -67,7 +68,7 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
 $pdf-color                  : #ee5f5b;
-$appendix-color             : #663a82;
+$appendix-color             : #cc0099;
 $info-color                 : #0366d6;
 $video-color                : #000000;
 
