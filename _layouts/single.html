@@ -11,17 +11,17 @@ layout: default
 {% endunless %}
 {% endif %}
 <script>
-   function growDiv() {
-     var growDiv = document.getElementsByClassName('grow')[0];
-     if (growDiv.style.height == '200px') {
-       growDiv.id = "post";
-       var wrapper = document.querySelector('.measuringWrapper');
+   function growDiv(id, height) {
+     var growDiv = document.getElementsByClassName('grow')[id];
+     if (growDiv.style.height == height) {
+       growDiv.id = "post" + id;
+       var wrapper = document.querySelector('.measuringWrapper' + id);
        growDiv.style.height = wrapper.clientHeight + 30 + "px";
-       document.getElementById("more-button").innerHTML = 'Read less <i class="fas fa-chevron-up"></i>'
+       document.getElementById("more-button" + id).innerHTML = 'Read less <i class="fas fa-chevron-up"></i>'
      } else {
-       growDiv.id = "pre";
-       growDiv.style.height = '200px';
-       document.getElementById("more-button").innerHTML = 'Read more <i class="fas fa-chevron-down"></i>'
+       growDiv.id = "pre" + id;
+       growDiv.style.height = height;
+       document.getElementById("more-button" + id).innerHTML = 'Read more <i class="fas fa-chevron-down"></i>'
      }
    }
 </script>
@@ -93,8 +93,8 @@ layout: default
 
 
                {% if page.extra_section_title and page.extra_section_title != "" and page.extra_section_content1 and page.extra_section_content1 != "" %}
-               <div class="grow" id="pre" style="height: 200px">
-                  <div class='measuringWrapper'>
+               <div class="grow" id="pre0" style="height: 300px">
+                  <div class='measuringWrapper0'>
                      <h2 id="appendix">{{ page.extra_section_title}}</h2>
                      <p style="font-size: 0.85em">{{page.extra_section_content1}}</p>
                      {% if page.extra_section_fig1 and page.extra_section_fig1 != "" %}
@@ -116,14 +116,22 @@ layout: default
                {%endif%}
 
                {% if page.extra_section_title and page.extra_section_title != "" and page.extra_section_content1 and page.extra_section_content1 != "" %}
-               <div onclick="growDiv()" class="morebutton" id="more-button">Read more <i class="fas fa-chevron-down"></i></div>
+               <div onclick="growDiv(0, '300px')" class="morebutton" id="more-button0">Read more <i class="fas fa-chevron-down"></i></div>
                {% endif %}
                {% if page.press and page.press != "" %}
-               <h2 id="media">Media coverage</h2>
-               {% for item in page.press%}
-               <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
-               {% endfor %}
-            {% endif %}
+               <div class="grow" id="pre1" style="height: 400px">
+                  <div class='measuringWrapper1'>
+                     <h2 id="media">Media coverage</h2>
+                     {% for item in page.press%}
+                     <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
+                     {% endfor %}
+                  </div>
+               </div>
+               {% endif %}
+               {% if page.press and page.press != "" %}
+               <div onclick="growDiv(1, '400px')" class="morebutton" id="more-button1">Read more <i class="fas fa-chevron-down"></i></div>
+               {% endif %}
+
             </section>
             {% endif %}
             {% if page.citation and page.paperurl %}
