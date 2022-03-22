@@ -3,15 +3,15 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "White papers"
-    url: /whitepapers/    
-
   - title: "Teaching"
     url: /teaching/    
     
   - title: "Contacts"
     url: /contacts/
     
+  #- title: "White papers"
+  #  url: /whitepapers/    
+
   #- title: "CV"
   #  url: /cv/
     
