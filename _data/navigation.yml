@@ -3,8 +3,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "White papers"
-    url: /whitepapers/    
+#  - title: "White papers"
+#    url: /whitepapers/    
 
   - title: "Teaching"
     url: /teaching/    

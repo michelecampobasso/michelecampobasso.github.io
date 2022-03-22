@@ -17,6 +17,7 @@ gem "github-pages", group: :jekyll_plugins
 # gem "jekyll"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# gem "commonmarker", ">= 0.23.4"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -26,3 +27,5 @@ group :jekyll_plugins do
   gem 'hawkins'
   gem 'jekyll-seo-tag'
 end
+
+gem "webrick", "~> 1.7"
