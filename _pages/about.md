@@ -16,8 +16,6 @@ The goal of my research is to characterise threats emerging from underground bla
 
 To this extent, my efforts address the [discovery of emerging underground criminal business models](https://michelecampobasso.github.io/publication/2020-11-10-impaas) and how they're framed into the criminal supply-chain, their provisioning capability for an arbitrary threat actor, [the circumvention of adversarial countermeasures to investigation and infiltration in blackmarkets](https://michelecampobasso.github.io/publication/2019-07-17-caronte), the attribution of illegal products and services available across the markets, and underground theat intelligence reliability improvement. 
 
-<a rel="me" style="display: none; visibility: hidden" href="https://infosec.exchange/@alphacentauri">Mastodon</a>
-
 Personal
 ------
 
