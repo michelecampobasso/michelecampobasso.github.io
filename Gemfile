@@ -28,4 +28,10 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
 end
 
-gem "webrick", "~> 1.7"
+# gem "webrick", "~> 1.7"
+gem "webrick"
+# gem 'eventmachine', :git => 'git://github.com/eventmachine/eventmachine.git', 
+# :branch => 'master'
+
+gem 'eventmachine', :git => 'https://github.com/eventmachine/eventmachine.git', 
+:branch => 'master'
