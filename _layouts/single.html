@@ -60,17 +60,18 @@ layout: default
                <!-- Awards badge -->
                {% if page.award and page.award != "" and page.award_link and page.award_link != "" %}
                <a href="{{ page.award_link }}" class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i>{{ page.award }}</a>
+               <br>
                {% elsif page.award and page.award != "" %}
                <a class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ page.award }}</a>
-               {% endif %}
                <br>
+               {% endif %}
                <!--{% if page.publisher_link %}<a href="{{ page.publisher_link }}" class="btn btn--pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Publisher link</a>{% endif %}
                   {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pre-print direct link</a>{% endif %}
                   {% if page.open_access_link %}<a href="{{ page.open_access_link }}" class="btn btn--pdf-light"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> arXiv.org</a>{% endif %}
                   {% if page.white_paper_publisher_link %}<a href="{{ page.white_paper_publisher_link }}" class="btn btn--success"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Publisher link</a>{% endif %}
                   {% if page.publisher_link %}<a href="{{ page.open_access_link }}" class="btn btn--pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Publisher PDF</a>{% endif %}-->
                {% if page.open_access_link %}<a href="{{ page.open_access_link }}" target="_blank" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>{% endif %}
-               <!--{% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pre-print</a>{% endif %}-->
+               {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pre-print</a>{% endif %}
                {% if page.white_paper_publisher_link %}<a href="{{ page.white_paper_publisher_link }}" class="btn btn--success"><i class="fas fa-external-link-alt" aria-hidden="true"></i> External link</a>{% endif %}
                {% if page.database %}<a href="{{ page.database }}" class="btn btn--success"><i class="fa fa-database" aria-hidden="true"></i> Datasets</a>{% endif %}
                {% if page.source %}<a href="{{ page.source }}" class="btn btn--success"><i class="fa fa-code" aria-hidden="true"></i> Source code</a>{% endif %}

@@ -32,6 +32,5 @@ end
 gem "webrick"
 # gem 'eventmachine', :git => 'git://github.com/eventmachine/eventmachine.git', 
 # :branch => 'master'
-
-gem 'eventmachine', :git => 'https://github.com/eventmachine/eventmachine.git', 
-:branch => 'master'
+gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 
+'v1.2.7'
