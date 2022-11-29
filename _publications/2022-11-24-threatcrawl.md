@@ -8,6 +8,6 @@ pre_print_link: "https://michelecampobasso.github.io/assets/papers/threatcrawl.p
 #publisher_link: "https://dl.acm.org/doi/10.1145/3427228.3427233"
 authors: 'Campobasso, M.; Allodi, L.'
 abstract: "Collecting data on underground criminal communities is highly valuable both for security research and security operations. Unfortunately these communities live within a constellation of diverse online forums that are difficult to infiltrate, may adopt crawling monitoring countermeasures, and require the development of ad-hoc scrapers for each different community, making the endeavour increasingly technically challenging, and potentially expensive. To address this problem we propose THREAT/crawl, a method and prototype tool for a highly reusable crawler that can learn a wide range of (arbitrary) forum structures, can remain under-the-radar during the crawling activity and can be extended and configured at the user will. We showcase THREAT/crawl capabilities and provide prime evaluation of our prototype against a range of active, live, underground communities."
-#source: 
+source: https://gitlab.tue.nl/threat-crawl/THREATcrawl/
 press: [["https://www.globenewswire.com/news-release/2022/11/18/2559085/0/en/APWG-Announces-Papers-Accepted-for-the-2022-Annual-Symposium-on-Electronic-Crime-Research-Messages-From-the-Edge-of-the-Cybercrime-Experience.html", "en", "APWG Announces Papers Accepted for the 2022 Annual Symposium on Electronic Crime Research — Messages From the Edge of the Cybercrime Experience"]]
 ---
