@@ -3,7 +3,7 @@ title: "THREAT/crawl: a Trainable, Highly-Reusable, and Extensible Automated Met
 collection: publications
 permalink: /publication/2022-11-24-threatcrawl
 date: 2022-11-24
-venue: 'In Proceedings of the 2022 Annual Symposium on Electronic Crime Research (eCrime 2022)'
+venue: 'In Proceedings of the 17th Symposium on Electronic Crime Research (APWG eCrime 2022)'
 pre_print_link: "https://michelecampobasso.github.io/assets/papers/threatcrawl.pdf"
 #publisher_link: "https://dl.acm.org/doi/10.1145/3427228.3427233"
 authors: 'Campobasso, M.; Allodi, L.'
