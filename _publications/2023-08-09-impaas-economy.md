@@ -2,7 +2,7 @@
 title: "Know Your Cybercriminal: Evaluating Attacker Preferences by Measuring Profile Sales on an Active, Leading Criminal Market for User Impersonation at Scale"
 collection: publications
 permalink: /publication/2023-08-09-impaas-economy
-date: 2022-11-24
+date: 2023-08-09
 venue: 'In Proceedings of the 32nd USENIX Security Symposium (USENIX Security 2023)'
 open_access_link: 'https://arxiv.org/pdf/2303.03249.pdf'
 authors: 'Campobasso, M.; Allodi, L.'
