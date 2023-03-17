@@ -17,8 +17,13 @@ author_profile: true
       {% if year != written_year %}
         <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
         {% capture written_year %}{{ year }}{% endcapture %}
+        {% capture first_article %}'True'{% endcapture %}
       {% else %}
-        <hr/>
+        {% if first_article == 'True' %}
+          {% capture first_article %}'False'{% endcapture %}
+        {% else %}
+          <hr/>
+        {% endif %}
       {% endif %}
       {% include archive-single.html %}
     {% endfor %}
