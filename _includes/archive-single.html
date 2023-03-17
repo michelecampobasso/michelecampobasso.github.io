@@ -36,7 +36,9 @@
       </h3>-->
       {% if post.collection == 'publications' %}
       <div style="max-width: 100%">
-        {% if post.white_paper and post.white_paper != "" %}<a class="btn btn--whitepaper" target="_blank" rel="noopener noreferrer">White paper</a> {% endif %}
+        {% if post.collection == 'whitepapers' %}<a class="btn btn--whitepaper" target="_blank" rel="noopener noreferrer">White paper</a> {% endif %}
+        {% if post.collection == 'journals' %}<a class="btn btn--journal" target="_blank" rel="noopener noreferrer">Journal</a> {% endif %}
+
         {% if post.acceptance_rate and post.acceptance_rate != "" %}<a class="btn btn--badge" target="_blank" rel="noopener noreferrer">Acceptance rate: {{ post.acceptance_rate }}</a> {% endif %}
         {% if post.award and post.award != "" and post.award_link and post.award_link != "" %}<a href="{{ post.award_link }}" class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>
         {% elsif post.award and post.award != "" %}<a class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>{% endif %}
