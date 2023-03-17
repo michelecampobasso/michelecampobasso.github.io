@@ -20,11 +20,7 @@ author_profile: true
         {% capture written_year %}{{ year }}{% endcapture %}
         {% assign first_article = 'True' %}
       {% else %}
-        {% if first_article == 'True' %}
-          {% assign first_article = 'False' %}
-        {% else %}
-          <hr/>
-        {% endif %}
+        <hr/>
       {% endif %}
       {% include archive-single.html %}
     {% endfor %}
