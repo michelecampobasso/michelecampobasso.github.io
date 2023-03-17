@@ -2,6 +2,7 @@
 title: "SAIBERSOC: A Methodology and Tool for Experimenting with Security Operation Centers"
 collection: journals
 permalink: /journals/2022-02-08-saibersoc-journal
+journal: True
 date: 2022-02-08
 venue: 'Digital Threats: Research and Practice. Volume 3, Issue 2, Article No.: 14, pp 1–29'
 publisher_link: "https://dl.acm.org/doi/full/10.1145/3491266"
