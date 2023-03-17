@@ -34,27 +34,19 @@
         {% endif %}
         {{title}}
       </h3>-->
-      {% if post.collection == 'publications' or post.collection == 'whitepapers' or post.collection == 'journals'%}
+      {% if post.collection == 'publications' %}
       <div style="max-width: 100%">
-        {% if post.collection == 'whitepapers' %}
-          <a class="btn btn--whitepaper" target="_blank" rel="noopener noreferrer">White paper</a> 
-        {% endif %}
-        {% if post.collection == 'journals' %}
-          <a class="btn btn--journal" target="_blank" rel="noopener noreferrer">Journal</a> 
-        {% endif %}
-
-        {% if post.acceptance_rate and post.acceptance_rate != "" %}
-          <a class="btn btn--badge" target="_blank" rel="noopener noreferrer">Acceptance rate: {{ post.acceptance_rate }}</a> 
-        {% endif %}
-        {% if post.award and post.award != "" and post.award_link and post.award_link != "" %}
-          <a href="{{ post.award_link }}" class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>
-        {% elsif post.award and post.award != "" %}
-          <a class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>
-        {% endif %}
+        {% if post.white_paper and post.white_paper != "" %}<a class="btn btn--whitepaper" target="_blank" rel="noopener noreferrer">White paper</a> {% endif %}
+        {% if post.journal and post.journal != "" %}<a class="btn btn--journal" target="_blank" rel="noopener noreferrer">Journal</a> {% endif %}
+        {% if post.acceptance_rate and post.acceptance_rate != "" %}<a class="btn btn--badge" target="_blank" rel="noopener noreferrer">Acceptance rate: {{ post.acceptance_rate }}</a> {% endif %}
+        {% if post.award and post.award != "" and post.award_link and post.award_link != "" %}<a href="{{ post.award_link }}" class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>
+        {% elsif post.award and post.award != "" %}<a class="btn btn--award" target="_blank" rel="noopener noreferrer"><i class="fa fa-star" aria-hidden="true"></i> {{ post.award }}</a>{% endif %}
       </div>
       <div> {{ post.authors }} <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} </div>{% endif %}
-      <!--{% elsif post.collection == 'whitepapers' %}
-        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}-->
+      {% elsif post.collection == 'whitepapers' %}
+        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
+      {% elsif post.collection == 'journals' %}
+        {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
       {% elsif post.collection == 'teaching' %}
         <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="{{ post.course_page}}">Course page</a>
       {% endif %}
