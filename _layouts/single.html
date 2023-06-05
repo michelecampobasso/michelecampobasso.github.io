@@ -121,12 +121,10 @@ layout: default
                {% endif %}
                {% if page.press and page.press != "" %}
                <div class="page__content" id="pre1" style="height: fit-content">
-                  <div class='measuringWrapper1'>
-                     <h2 id="media">Media coverage</h2>
-                     {% for item in page.press%}
-                     <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
-                     {% endfor %}
-                  </div>
+                  <h2 id="media">Media coverage</h2>
+                  {% for item in page.press%}
+                  <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
+                  {% endfor %}
                </div>
                {% endif %}
                <!--{% if page.press and page.press != "" %}
