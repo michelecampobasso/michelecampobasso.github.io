@@ -120,12 +120,12 @@ layout: default
                <div onclick="growDiv(0, '300px')" class="morebutton" id="more-button0">Read more <i class="fas fa-chevron-down"></i></div>
                {% endif %}
                {% if page.press and page.press != "" %}
-               <div class="page__content" id="pre1" style="height: fit-content">
+               <p style="height: fit-content">
                   <h2 id="media">Media coverage</h2>
                   {% for item in page.press%}
                   <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
                   {% endfor %}
-               </div>
+               </p>
                {% endif %}
                <!--{% if page.press and page.press != "" %}
                <div onclick="growDiv(1, '400px')" class="morebutton" id="more-button1">Read more <i class="fas fa-chevron-down"></i></div>
