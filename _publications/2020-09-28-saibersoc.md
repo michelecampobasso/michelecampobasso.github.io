@@ -6,7 +6,7 @@ date: 2020-12-07
 #extra_info: "(<b>Acceptance rate: 23% - Distinguished Paper Award with Artifacts ACSAC 2020</b>)"
 award: "Distinguished Paper Award with Artifacts"
 acceptance_rate: "23%"
-venue: 'In Proceedings of the 36th Annual Computer Security Applications Conference (ACSAC 2020)'
+venue: 'In Proceedings of the 36th Annual Computer Security Applications Conference (<b>ACSAC 2020</b>)'
 open_access_link: "https://dl.acm.org/doi/10.1145/3427228.3427233"
 awards: "Distinguished Paper Award with Artifacts ACSAC 2020"
 authors: 'Rosso, M.; Campobasso, M.; Gankhuyag, G.; Allodi, L.'

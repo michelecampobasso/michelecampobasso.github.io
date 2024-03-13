@@ -3,7 +3,7 @@ title: "You Can Tell a Cybercriminal by the Company they Keep: A Framework to In
 collection: publications
 permalink: /publications/2023-07-05-underground-relevance
 date: 2023-07-05
-venue: "The 22nd Workshop on the Economics of Information Security (WEIS'23)"
+venue: "The 22nd Workshop on the Economics of Information Security (<b>WEIS 2023</b>)"
 open_access_link: '/assets/papers/Prominent_markets_economic_framework.pdf'
 authors: 'Campobasso, M.; Radulescu, R., Brons, S., Allodi, L.'
 database: https://security1.win.tue.nl/doku.php?id=artefacts#data_sharing
