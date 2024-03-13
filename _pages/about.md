@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<p style="text-align: justify; text-justify: inter-word;">I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale.<br><br>
+<p style=\"text-align: justify; text-justify: inter-word;\">I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale.<br><br>
 
 In September 2019, I began my PhD at the [Security Group](https://security1.win.tue.nl) of [Eindhoven University of Technology](https://www.tue.nl) under the supervision of [dr. Luca Allodi](https://lallodi.github.io/), and in March 2024 I defended my PhD thesis titled ["Understanding and Characterizing the Cybercriminal Ecosystem Enabling Attack Innovation at Scale"](https://michelecampobasso.github.io/publication/2024-03-07-thesis)). I integrate concepts from economics and criminology to characterize cybercriminal marketplaces fostering innovation and enabling attacks at scale to identify those posing real-world threats.<br><br>
 
@@ -15,7 +15,7 @@ I've completed my studies cum laude in Computer Sciences and Engineering at Alma
 
 <h3>Research overview</h3>
 
-<p style="text-align: justify; text-justify: inter-word;">My research focuses on [how cybercriminal communities support the provisioning of offensive cyber capabilities for an arbitrary threat actor](https://michelecampobasso.github.io/whitepapers/2021-03-01-proliferation-primer), leading to the [discovery of emerging underground criminal business models](https://michelecampobasso.github.io/publication/2020-11-10-impaas) and to the [derivation of attacker preferences to characterize victims and inform a cyber-risk model](https://michelecampobasso.github.io/publication/2023-08-09-impaas-economy). To achieve this, I study how to [circumvent adversarial countermeasures to investigation and infiltration in blackmarkets](https://michelecampobasso.github.io/publication/2022-11-24-threatcrawl). Thanks to the collected data and to the achieved foodhold in tenths of cybercriminal communities, I propose an [evaluation framework for cybercriminal marketplaces supporting attack innovation](https://michelecampobasso.github.io/publications/2023-07-05-underground-relevance).</p>
+<p style=\"text-align: justify; text-justify: inter-word;\">My research focuses on [how cybercriminal communities support the provisioning of offensive cyber capabilities for an arbitrary threat actor](https://michelecampobasso.github.io/whitepapers/2021-03-01-proliferation-primer), leading to the [discovery of emerging underground criminal business models](https://michelecampobasso.github.io/publication/2020-11-10-impaas) and to the [derivation of attacker preferences to characterize victims and inform a cyber-risk model](https://michelecampobasso.github.io/publication/2023-08-09-impaas-economy). To achieve this, I study how to [circumvent adversarial countermeasures to investigation and infiltration in blackmarkets](https://michelecampobasso.github.io/publication/2022-11-24-threatcrawl). Thanks to the collected data and to the achieved foodhold in tenths of cybercriminal communities, I propose an [evaluation framework for cybercriminal marketplaces supporting attack innovation](https://michelecampobasso.github.io/publications/2023-07-05-underground-relevance).</p>
 
 Personal
 ------
