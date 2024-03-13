@@ -43,7 +43,7 @@ layout: default
       <div class="page__inner-wrap">
          <header>
             {% if page.title %}
-            <h1 class="page__title" style="margin-bottom: 0.1em" itemprop="headline">
+            <h1 class="page__title" itemprop="headline">
                {{ page.title | markdownify | remove: "
                <p>" | remove: "</p>
                " }}
@@ -72,25 +72,24 @@ layout: default
                   {% if page.publisher_link %}<a href="{{ page.open_access_link }}" class="btn btn--pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Publisher PDF</a>{% endif %}-->
                {% if page.open_access_link %}<a href="{{ page.open_access_link }}" target="_blank" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>{% endif %}
                {% if page.pre_print_link %}<a href="{{ page.pre_print_link }}" class="btn btn--pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Pre-print</a>{% endif %}
-               {% if page.white_paper_publisher_link %}<a href="{{ page.white_paper_publisher_link }}" class="btn btn--success"><i class="fa-solid fa-arrow-up-right-from-square"></i> External link</a>{% endif %}
+               {% if page.white_paper_publisher_link %}<a href="{{ page.white_paper_publisher_link }}" class="btn btn--success"><i class="fas fa-external-link-alt" aria-hidden="true"></i> External link</a>{% endif %}
                {% if page.database %}<a href="{{ page.database }}" class="btn btn--success"><i class="fa fa-database" aria-hidden="true"></i> Datasets</a>{% endif %}
-               {% if page.slides %}<a href="{{ page.slides }}" class="btn btn--slides"><i class="fa-solid fa-person-chalkboard"></i> Slides</a>{% endif %}
                {% if page.source %}<a href="{{ page.source }}" class="btn btn--success"><i class="fa fa-code" aria-hidden="true"></i> Source code</a>{% endif %}
                {% if page.video_link %}<a href="{{ page.video_link }}" class="btn btn--video"><i class="fa fa-film" aria-hidden="true"></i> Conference</a>{% endif %}
                {% if page.press %}<a href="#media" class="btn btn--info"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Media coverage</a>{% endif %}
             </p>
-            <section class="page__content" style="font-size: 0.85em; text-align: justify; text-justify: inter-word;" itemprop="text">
+            <section class="page__content" itemprop="text">
                {% if page.abstract and page.abstract != "" %}
                <h2>Abstract</h2>
-               <p>{{page.abstract}}</p>
+               <p style="font-size: 0.85em">{{page.abstract}}</p>
                {% endif %}
                {% if page.exec_summary and page.exec_summary != "" %}
                <h2>Executive Summary</h2>
-               <p>{{page.exec_summary}}</p>
+               <p style="font-size: 0.85em">{{page.exec_summary}}</p>
                {% endif %}
                {% if page.main_outcomes and page.main_outcomes != "" %}
                <h2>Main research outcomes</h2>
-               <p>{{page.main_outcomes}}</p>
+               <p style="font-size: 0.85em">{{page.main_outcomes}}</p>
                {% endif %}
 
 
@@ -98,20 +97,20 @@ layout: default
                <div class="grow" id="pre0" style="height: 300px">
                   <div class='measuringWrapper0'>
                      <h2 id="appendix">{{ page.extra_section_title}}</h2>
-                     <p>{{page.extra_section_content1}}</p>
+                     <p style="font-size: 0.85em">{{page.extra_section_content1}}</p>
                      {% if page.extra_section_fig1 and page.extra_section_fig1 != "" %}
                      <img src="{{site.url}}{{page.extra_section_fig1}}" onclick="window.open(this.src)"></img>
                      {% endif %}
                      {% if page.extra_section_content2 and page.extra_section_content2 != "" %}
                      <br/><br/>
-                     <p>{{page.extra_section_content2}}</p>
+                     <p style="font-size: 0.85em">{{page.extra_section_content2}}</p>
                      {% endif %}
                      {% if page.extra_section_fig2 and page.extra_section_fig2 != "" %}
                      <img src="{{site.url}}{{page.extra_section_fig2}}" onclick="window.open(this.src)"></img>
                      {% endif %}
                      {% if page.extra_section_content3 and page.extra_section_content3 != "" %}
                      <br/><br/>
-                     <p>{{page.extra_section_content3}}</p>
+                     <p style="font-size: 0.85em">{{page.extra_section_content3}}</p>
                      {% endif %}
                   </div>
                </div>
@@ -124,7 +123,7 @@ layout: default
                <p style="height: fit-content">
                   <h2 id="media">Media coverage</h2>
                   {% for item in page.press%}
-                  <a href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
+                  <a style="font-size: 0.85em; " href="{{ item[0] }}">[{% if item[1] == "en"%}<span class="flag-icon flag-icon-gb" style="font-size: 17px"></span>{%elsif item[1] == "nl"%}<span class="flag-icon flag-icon-nl" style="font-size: 17px"></span>{%endif%}] {{ item[2] }}</a><br/>
                   {% endfor %}
                </p>
                {% endif %}
@@ -140,7 +139,7 @@ layout: default
             <p>Recommended citation: {{ page.citation }} </p>
             {% endif %}
          </header>
-         <section class="page__content" style="text-align: justify; text-justify: inter-word;" itemprop="text">
+         <section class="page__content" itemprop="text">
             {{ content }}
          </section>
          <footer class="page__meta">
