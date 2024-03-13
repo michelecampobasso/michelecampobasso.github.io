@@ -7,9 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-Academical
-------
-
 I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale. 
 
 In September 2019, I began my PhD at the [Security Group](https://security1.win.tue.nl) of [Eindhoven University of Technology](https://www.tue.nl) under the supervision of [dr. Luca Allodi](https://lallodi.github.io/), and in March 2024 I defended my PhD thesis titled ["Understanding and Characterizing the Cybercriminal Ecosystem Enabling Attack Innovation at Scale"](https://michelecampobasso.github.io/publication/2024-03-07-thesis)). I integrate concepts from economics and criminology to characterize cybercriminal marketplaces fostering innovation and enabling attacks at scale to identify those posing real-world threats.
@@ -23,4 +20,4 @@ My research focuses on [how cybercriminal communities support the provisioning o
 Personal
 ------
 
-In my spare time, I enjoy bouldering, cycling through North Brabant, trekking in the nature, tinkering, playing piano and CTFs on [HackTheBox](https://www.hackthebox.eu); my handle is [alphacentauri](https://www.hackthebox.eu/home/users/profile/11532). With some friends, we have [a blog](https://highwaytoroot.github.io) where we ~(seldom)~ _used to_ publish writeups of the boxes we own on HackTheBox.
+In my spare time, I enjoy bouldering, cycling through North Brabant, trekking in the nature, tinkering, playing piano and CTFs on [HackTheBox](https://www.hackthebox.eu); my handle is [alphacentauri](https://www.hackthebox.eu/home/users/profile/11532). With some friends, we have [a blog](https://highwaytoroot.github.io) where we <s>(seldom)</s> _used to_ publish writeups of the boxes we own on HackTheBox.
