@@ -82,7 +82,7 @@ layout: default
             <section class="page__content" itemprop="text">
                {% if page.abstract and page.abstract != "" %}
                <h2>Abstract</h2>
-               <p style="font-size: 0.85em">{{page.abstract}}</p>
+               <p style="font-size: 0.85em; text-align: justify; text-justify: inter-word;">{{page.abstract}}</p>
                {% endif %}
                {% if page.exec_summary and page.exec_summary != "" %}
                <h2>Executive Summary</h2>
@@ -90,7 +90,7 @@ layout: default
                {% endif %}
                {% if page.main_outcomes and page.main_outcomes != "" %}
                <h2>Main research outcomes</h2>
-               <p style="font-size: 0.85em">{{page.main_outcomes}}</p>
+               <p style="font-size: 0.85em; text-align: justify; text-justify: inter-word;">{{page.main_outcomes}}</p>
                {% endif %}
 
 
@@ -98,20 +98,20 @@ layout: default
                <div class="grow" id="pre0" style="height: 300px">
                   <div class='measuringWrapper0'>
                      <h2 id="appendix">{{ page.extra_section_title}}</h2>
-                     <p style="font-size: 0.85em">{{page.extra_section_content1}}</p>
+                     <p style="font-size: 0.85em; text-align: justify; text-justify: inter-word;">{{page.extra_section_content1}}</p>
                      {% if page.extra_section_fig1 and page.extra_section_fig1 != "" %}
                      <img src="{{site.url}}{{page.extra_section_fig1}}" onclick="window.open(this.src)"></img>
                      {% endif %}
                      {% if page.extra_section_content2 and page.extra_section_content2 != "" %}
                      <br/><br/>
-                     <p style="font-size: 0.85em">{{page.extra_section_content2}}</p>
+                     <p style="font-size: 0.85em; text-align: justify; text-justify: inter-word;">{{page.extra_section_content2}}</p>
                      {% endif %}
                      {% if page.extra_section_fig2 and page.extra_section_fig2 != "" %}
                      <img src="{{site.url}}{{page.extra_section_fig2}}" onclick="window.open(this.src)"></img>
                      {% endif %}
                      {% if page.extra_section_content3 and page.extra_section_content3 != "" %}
                      <br/><br/>
-                     <p style="font-size: 0.85em">{{page.extra_section_content3}}</p>
+                     <p style="font-size: 0.85em; text-align: justify; text-justify: inter-word;">{{page.extra_section_content3}}</p>
                      {% endif %}
                   </div>
                </div>
