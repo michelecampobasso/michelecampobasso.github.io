@@ -1,11 +1,13 @@
 ---
-title: "Contacts"
+title: "Contacts and CV"
 permalink: /contacts/
 author_profile: true
 redirect_from:
   - /contact
   - /contacts
 ---
+
+My full CV is available [here](/files/Michele_Campobasso_CV.pdf)
 
     Office:             MF 6.109 
                         P.O. Box 513, 5600 MB
