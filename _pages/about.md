@@ -7,11 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale (_my full CV [here](https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf)_).
+<!--<p style="padding-bottom:0.5em;border-bottom:1px solid #f2f3f3">My full CV is <a href="https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf">here</a>!</p>-->
+My full CV is [here](https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf).
+
+<h3>More verbosely</h3>
+
+I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale and promoting innovation.
+
+I've completed my studies cum laude in Computer Sciences and Engineering at Alma Mater Studiorum - University of Bologna, Italy in 2019; the [master thesis](https://ieeexplore.ieee.org/abstract/document/8802484) has been published in the proceedings of the [1st Workshop on Attackers and Cyber-Crime Operations (WACCO)](https://www.wacco-workshop.eu/past/2019/index.html) held at IEEE European Symposium on Security and Privacy 2019 in Stockholm, Sweden.
 
 In September 2019, I began my PhD at the [Security Group](https://security1.win.tue.nl) of [Eindhoven University of Technology](https://www.tue.nl) under the supervision of [dr. Luca Allodi](https://lallodi.github.io/), and in March 2024 I defended my PhD thesis titled ["Understanding and Characterizing the Cybercriminal Ecosystem Enabling Attack Innovation at Scale"](https://michelecampobasso.github.io/publication/2024-03-07-thesis). In my work, I integrate concepts from economics and criminology to characterize cybercriminal marketplaces fostering innovation and enabling attacks at scale to identify those posing more damaging real-world threats.
-
-I've completed my studies cum laude in Computer Sciences and Engineering at Alma Mater Studiorum - University of Bologna, Italy in 2019; the [thesis](https://ieeexplore.ieee.org/abstract/document/8802484) has been published in the proceedings of the [1st Workshop on Attackers and Cyber-Crime Operations (WACCO)](https://www.wacco-workshop.eu/past/2019/index.html) held at IEEE European Symposium on Security and Privacy 2019 in Stockholm, Sweden.
 
 <h3>Research overview</h3>
 
