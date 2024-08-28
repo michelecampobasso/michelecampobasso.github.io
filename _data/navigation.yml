@@ -1,5 +1,6 @@
 # main links links
 main:
+  #- title: "<img src='https://cdn-icons-png.freepik.com/256/11852/11852656.png?semt=ais_hybrid' style='width:30px;height:30px;'> Publications"
   - title: "Publications"
     url: /publications/
 

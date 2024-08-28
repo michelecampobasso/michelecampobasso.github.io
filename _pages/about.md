@@ -8,9 +8,11 @@ redirect_from:
 ---
 
 <!--<p style="padding-bottom:0.5em;border-bottom:1px solid #f2f3f3">My full CV is <a href="https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf">here</a>!</p>-->
-My full CV is [here](https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf).
+<h3 style="color:#DC143C">I currently am in the job market!</h3>
 
-<h3>More verbosely</h3>
+<img src="/images/resume3.png" style="width:30px;height:30px;"> My full CV is [here](https://michelecampobasso.github.io/files/Michele_Campobasso_CV.pdf).
+
+<h3>In short</h3>
 
 I am a curious and passionate individual interested in the cybercriminal ecosystem supporting attacks at scale and promoting innovation.
 
@@ -25,4 +27,4 @@ My research focuses on [how cybercriminal communities support the provisioning o
 Personal
 ------
 
-In my spare time, I enjoy bouldering, cycling through North Brabant (NL), hiking, tinkering (I'm on a mission to repair everything I can), playing piano and CTFs on [HackTheBox](https://www.hackthebox.eu); my handle is [alphacentauri](https://www.hackthebox.eu/home/users/profile/11532). With some friends, we have [a blog](https://highwaytoroot.github.io) where we <s>(seldom)</s> _used to_ publish writeups of the boxes we own on HackTheBox.
+In my spare time, I enjoy bouldering, cycling anywhere I can, hiking, tinkering (I'm on a mission to repair everything I can), playing piano and CTFs on [HackTheBox](https://www.hackthebox.eu); my handle is [alphacentauri](https://www.hackthebox.eu/home/users/profile/11532). With some friends, we have [a blog](https://highwaytoroot.github.io) where we <s>(seldom)</s> _used to_ publish writeups of the boxes we own on HackTheBox.
