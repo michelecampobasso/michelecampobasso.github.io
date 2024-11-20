@@ -48,8 +48,6 @@
         {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
       {% elsif post.collection == 'journals' %}
         {{ post.authors }}  <i><a href="{{ post.permalink }}">{{ post.title }}</a>. </i>{{ post.venue }}{% if post.extra_info and post.extra_info != "" %}, {{post.extra_info}} {% endif %}
-      {% elsif post.collection == 'teaching' %}
-        <i>{{ post.title }}</i>, <b>{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="{{ post.course_page}}">Course page</a>
       {% endif %}
 
       <!--

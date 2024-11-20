@@ -2,6 +2,9 @@
 title: "Know Your Cybercriminal: Evaluating Attacker Preferences by Measuring Profile Sales on an Active, Leading Criminal Market for User Impersonation at Scale"
 collection: publications
 permalink: /publication/2023-08-09-impaas-economy
+award: Dutch Cybersecurity Research Paper Award 2024 Runner Up
+award_link: https://www.linkedin.com/feed/update/urn:li:activity:7249777141616111616/
+acceptance_rate: 29%
 date: 2023-08-09
 venue: 'In Proceedings of the 32nd USENIX Security Symposium (<b>USENIX Security 2023</b>)'
 open_access_link: 'https://arxiv.org/pdf/2303.03249.pdf'

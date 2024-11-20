@@ -180,7 +180,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
@@ -189,7 +189,10 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
+    permalink: /:collection/:path/
+  press:
+    output: false
     permalink: /:collection/:path/
 
 
@@ -245,7 +248,15 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: single
+      author_profile: true
+      share: true
+  # _press
+  - scope:
+      path: ""
+      type: press
+    values:
+      layout: single
       author_profile: true
       share: true
   # _whitepapers
