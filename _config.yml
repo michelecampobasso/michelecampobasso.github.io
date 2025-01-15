@@ -194,6 +194,9 @@ collections:
   press:
     output: false
     permalink: /:collection/:path/
+  podcasts:
+    output: false
+    permalink: /:collection/:path/
 
 
 # Defaults

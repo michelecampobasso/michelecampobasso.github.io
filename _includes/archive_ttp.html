@@ -32,6 +32,9 @@
         <i>{{ post.title }}</i><br/><b style="padding-left: 15px;">{{post.location}}</b>, {{post.where}}. {{ post.date | date:"%B %Y" }}{% if post.link and post.link != "" %}<br/><a href="{{ post.link}}">Link</a>{% endif %} 
       {% elsif post.collection == 'press' %}
         <i><a href="{{ post.link}}">{{ post.title }}</a></i><br/><b style="padding-left: 15px;">{{post.editor}}</b>, {{ post.date | date:"%B %Y" }}
+      {% elsif post.collection == 'podcasts' %}
+        <i><a href="{{ post.link}}">{{ post.title }}</a></i>{% if post.youtube and post.youtube != "" %}, Direct link: <a href="{{ post.youtube }}"><i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i> YouTube</a>{% endif %}
+          <br/><b style="padding-left: 15px;">{{post.editor}}</b>, {{ post.date | date:"%B %Y" }}
       {% endif %}
   </article>
 </div>
