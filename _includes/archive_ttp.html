@@ -27,7 +27,7 @@
       {% endif %}
 
       {% if post.collection == 'teaching' %}
-        <i>{{ post.title }}</i><br/><b style="padding-left: 15px;">{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. <a href="{{ post.course_page}}">Course page</a>
+        <i>{{ post.title }}</i><br/><b style="padding-left: 15px;">{{ post.course }}</b>, {{ post.start-date | date:"%Y" }}-{{ post.end-date | default: "present" | date: "%Y" }}. {% if post.course_page and post.course_page != "" %}<a href="{{ post.course_page}}">Course page</a> {% endif %}
       {% elsif post.collection == 'talks' %}
         <i>{{ post.title }}</i><br/><b style="padding-left: 15px;">{{post.location}}</b>, {{post.where}}. {{ post.date | date:"%B %Y" }}{% if post.link and post.link != "" %}<br/><a href="{{ post.link}}">Link</a>{% endif %} 
       {% elsif post.collection == 'press' %}
