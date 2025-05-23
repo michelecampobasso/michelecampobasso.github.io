@@ -34,6 +34,7 @@
         <i><a href="{{ post.link}}">{{ post.title }}</a></i><br/><b style="padding-left: 15px;">{{post.editor}}</b>, {{ post.date | date:"%B %Y" }}
       {% elsif post.collection == 'podcasts' %}
         <i><a href="{{ post.link}}">{{ post.title }}</a></i>{% if post.youtube and post.youtube != "" %}. Direct link: <a href="{{ post.youtube }}"><i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i> YouTube</a>{% endif %}
+      {% if post.spotify and post.spotify != "" %} <a href="{{ post.spotify }}"><i class="fa-brands fa-spotify fa-lg" style="color: #1ed760;"></i> Spotify</a>{% endif %}
           <br/><b style="padding-left: 15px;">{{post.editor}}</b>, {{ post.date | date:"%B %Y" }}
       {% endif %}
   </article>
