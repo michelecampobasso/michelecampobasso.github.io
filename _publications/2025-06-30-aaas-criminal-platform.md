@@ -3,7 +3,7 @@ title: "An Experimental Design to Investigate Attacker Actions on an Access-as-a
 collection: publications
 permalink: /publications/2025-06-30-aaas-criminal-platform
 date: 2025-06-30
-venue: 'In Proceedings of the 2019 IEEE European Symposium on Security and Privacy Workshops (<b>EuroS&PW 2019</b>) - 1st Workshop on Attackers and Cyber-Crime Operations (<b>WACCO</b>)'
+venue: 'In Proceedings of the 2025 IEEE European Symposium on Security and Privacy Workshops (<b>EuroS&PW 2025</b>) - 7th Workshop on Attackers and Cyber-Crime Operations (<b>WACCO</b>)'
 open_access_link: '/assets/papers/aaas-criminal-platform.pdf'
 authors: 'Ricaldi, R.; Yalamov, Y.; Campobasso, M.; Allodi, L.; Kool H.; Moneva, A.; Leukfeldt, E. R.'
 
